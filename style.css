@@ -1,0 +1,122 @@
+@font-face {
+  font-family: myfont-1;
+  src: url(/font/stroke_dimension/Stroke\ Dimension.ttf);
+}
+@font-face {
+  font-family: myfont-2;
+  src: url(/font/sanva/sanva\ font.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #C14600;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+  padding: 30px 0;
+}
+
+.container h1{
+  font-size: 80px;
+  font-family: myfont-1;
+  color: white;
+}
+.input-container{
+  display: flex;
+  padding: 30px 40px;
+  width: 600px;
+  height: 250px;
+  background-color: #E5D0AC;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.input-container .input{
+width: 400px;
+height: 54px;
+padding: 0px 50px 0 10px;
+font-size: 16px;
+border: 3px solid black;
+border-radius: 10px;
+font-family: myfont-2;
+}
+
+.input-container button{
+  padding: 16px 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin-left: -50px;
+  font-family: myfont-2;
+}
+.result{
+  width: 630px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 650px;
+  overflow: scroll;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+.result li{
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  background-color: #FF9D23;
+  padding: 10px 15px;
+  width: 100%;
+  align-items: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  word-wrap: break-word;
+  font-family: myfont-2;
+  border-radius: 10px;
+  border: 3px solid black;
+}
+.result li button{
+  padding: 10px 10px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: monospace;
+  border: 2px solid black;
+}
+.result li .Delete{
+  margin-left: auto;
+  border: 2px solid black;
+}
+.result .editInput{
+  width: 500px;
+  height: 40px;
+  padding: 0px 50px 0 10px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 10px; 
+  border: 2px solid black;
+}
+
+.result li .check[type = checkbox]{
+  scale: 1.8;
+  accent-color: black;
+  }
+
+.checker{
+  text-decoration: line-through;
+  opacity: 50%;
+}
